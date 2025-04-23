@@ -1,0 +1,27 @@
+# See https://git-scm.com/docs/gitignore
+
+# Ignore everything in .ddev except config.yaml
+.ddev/*
+!.ddev/config.yaml
+
+# Ignore node_modules
+/node_modules/*
+
+# Ignore specific directories in site/assets
+/site/assets/backups/*
+/site/assets/cache/*
+/site/assets/logs/*
+/site/assets/sessions/*
+/site/assets/ProCache-*/*
+/site/assets/pwpc/*
+
+# Allow database folder but ignore all files inside it by default
+# 2025-02-15: allowes only latest.sql 
+!/site/assets/backups/database/
+!/site/assets/backups/database/latest.sql
+# would allow all files
+# !/site/assets/backups/database/*
+
+# Ignore all /site/config files
+/site/config.php
+/site/config-dev.php

@@ -1,0 +1,87 @@
+{
+    "field": {
+        "prefix": "field",
+        "body": [
+            "const field_$1$0 = self::prefix . \"$1\";"
+        ],
+        "description": "Add a new field constant declaration"
+    },
+    "info": {
+        "prefix": "info",
+        "body": [
+            "\/**",
+            " * @author Bernhard Baumrock, $CURRENT_DATE.$CURRENT_MONTH.$CURRENT_YEAR",
+            " * @license ${1:Licensed under MIT}",
+            " * @link https:\/\/www.baumrock.com",
+            " *\/"
+        ],
+        "description": "Add info section to this file or Module"
+    },
+    "infoc": {
+        "prefix": "infoc",
+        "body": [
+            "\/**",
+            " * @author Bernhard Baumrock, $CURRENT_DATE.$CURRENT_MONTH.$CURRENT_YEAR",
+            " * @license COMMERCIAL DO NOT DISTRIBUTE",
+            " * @link https:\/\/www.baumrock.com",
+            " *\/"
+        ],
+        "description": "Add info section to this file or Module"
+    },
+    "ns": {
+        "prefix": "ns",
+        "body": [
+            "<?php",
+            "",
+            "namespace ${1:ProcessWire};",
+            "",
+            "$0"
+        ],
+        "description": "Add namespace"
+    },
+    "prif": {
+        "prefix": "prif",
+        "body": [
+            "private function $1($2): ${3:void}",
+            "{",
+            "  $0",
+            "}"
+        ],
+        "description": "Add a private method"
+    },
+    "prof": {
+        "prefix": "prof",
+        "body": [
+            "protected function $1($2): ${3:void}",
+            "{",
+            "  $0",
+            "}"
+        ],
+        "description": "Add a protected method"
+    },
+    "pubf": {
+        "prefix": "pubf",
+        "body": [
+            "public function $1($2): ${3:void}",
+            "{",
+            "  $0",
+            "}"
+        ],
+        "description": "Add a public method"
+    },
+    "tpl": {
+        "prefix": "tpl",
+        "body": [
+            "const tpl = \"$1\";",
+            "const prefix = \"$1_\";"
+        ],
+        "description": "tpl and prefix constant"
+    },
+    "var": {
+        "prefix": "var",
+        "body": [
+            "\/** @var $1 $$2 *\/"
+        ],
+        "description": "add variable typehint"
+    }
+}

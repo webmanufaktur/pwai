@@ -1,0 +1,17 @@
+{
+  "recommendations": [
+    "bmewburn.vscode-intelephense-client",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "mblode.twig-language-2",
+    "csstools.postcss",
+    "bierner.markdown-mermaid",
+    "formulahendry.auto-rename-tag",
+    "mjmlio.vscode-mjml",
+    "EditorConfig.EditorConfig",
+    "github.vscode-github-actions",
+    "wilfriedago.vscode-symbols-icon-theme",
+    "antfu.icons-carbon"
+  ],
+  "unwantedRecommendations": []
+}

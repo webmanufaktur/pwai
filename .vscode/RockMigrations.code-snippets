@@ -1,0 +1,399 @@
+{
+    "rm-defaults": {
+        "prefix": "rm-defaults",
+        "body": [
+            "\\$rm->setPagenameReplacements('de');",
+            "\\$rm->setModuleConfig('AdminThemeUikit', [",
+            "  \/\/ use consistent inputfield clicks",
+            "  \/\/ see https:\/\/github.com\/processwire\/processwire\/pull\/169",
+            "  'toggleBehavior' => 1,",
+            "]);",
+            "\\$rm->setModuleConfig('ProcessPageList', [",
+            "  'useTrash' => true, \/\/ show trash in tree for non superusers",
+            "]);",
+            "\/\/ install german language pack for the default language",
+            "\/\/ this will install language support, download the ZIP and install it",
+            "\\$rm->setLanguageTranslations('DE');",
+            "\\$rm->installModule('LanguageSupportFields');",
+            "\\$rm->installModule('LanguageSupportPageNames');",
+            "\\$rm->installModule('LanguageTabs');",
+            "\\$rm->setFieldData('title', ['type' => 'textLanguage']);"
+        ],
+        "description": "Set some custom PW defaults"
+    },
+    "rm-migrate-function": {
+        "prefix": "rm-migrate-function",
+        "body": [
+            "public function migrate()",
+            "{",
+            "  \\$rm = \\$this->rockmigrations();",
+            "  \\$rm->migrate([",
+            "    'fields' => [$0],",
+            "    'templates' => [",
+            "      self::tpl => [",
+            "        'fields' => [",
+            "          'title',",
+            "        ],",
+            "      ],",
+            "    ],",
+            "  ]);",
+            "}"
+        ],
+        "description": "migrate() function for use in a RockPageBuilder block"
+    },
+    "rm-migrate": {
+        "prefix": "rm-migrate",
+        "body": [
+            "\\$rm->migrate([",
+            "  'fields' => [],",
+            "  'templates' => [],",
+            "]);"
+        ],
+        "description": "rm-migrate"
+    },
+    "rm": {
+        "prefix": "rm",
+        "body": [
+            "\\$rm = rockmigrations();"
+        ],
+        "description": "Get rockmigrations()"
+    },
+    "rmf-checkbox": {
+        "prefix": "rmf-checkbox",
+        "body": [
+            "return [",
+            "  'type' => 'checkbox',",
+            "  'label' => '$1',",
+            "];"
+        ],
+        "description": "rmf-checkbox"
+    },
+    "rmf-datetime": {
+        "prefix": "rmf-datetime",
+        "body": [
+            "return [",
+            "  'type' => 'datetime',",
+            "  'label' => '$1',",
+            "  'dateOutputFormat' => 'd.m.Y H:i',",
+            "  'inputType' => 'text',",
+            "  'dateSelectFormat' => 'yMd',",
+            "  'datepicker' => InputfieldDatetime::datepickerFocus,",
+            "  'dateInputFormat' => 'j.n.y',",
+            "  'timeInputFormat' => 'H:i',",
+            "  'defaultToday' => 1,",
+            "];"
+        ],
+        "description": "Add an image field via RockMigrations"
+    },
+    "rmf-fieldset": {
+        "prefix": "rmf-fieldset",
+        "body": [
+            "return [",
+            "  'type' => 'FieldsetOpen',",
+            "  'label' => '$1',",
+            "  'icon' => '$2',",
+            "];"
+        ],
+        "description": "Add a fieldset (open+close)"
+    },
+    "rmf-fieldsetpage": {
+        "prefix": "rmf-fieldsetpage",
+        "body": [
+            "return [",
+            "  'label' => 'FieldsetPage Label',",
+            "  'type' => 'FieldtypeFieldsetPage',",
+            "  'fields' => [",
+            "    'title' => [",
+            "      'label' => 'My Label',",
+            "      'required' => 0,",
+            "    ],",
+            "    'foo',",
+            "    'bar',",
+            "  ],",
+            "  'tags' => '',",
+            "  'columnWidth' => 100,",
+            "  'icon' => 'cubes',",
+            "];"
+        ],
+        "description": "Add a fieldsetpage field via RockMigrations"
+    },
+    "rmf-files": {
+        "prefix": "rmf-files",
+        "body": [
+            "return [",
+            "  'type' => 'file',",
+            "  'label' => '$1',",
+            "  'maxFiles' => $2,",
+            "  'descriptionRows' => $3,",
+            "  'extensions' => '${4:mp4 pdf xlsx}',",
+            "  'icon' => 'files-o',",
+            "  'outputFormat' => FieldtypeFile::outputFormatArray,",
+            "];"
+        ],
+        "description": "Add a files field via RockMigrations"
+    },
+    "rmf-image": {
+        "prefix": "rmf-image",
+        "body": [
+            "return [",
+            "  'type' => 'image',",
+            "  'label' => '$1',",
+            "  'maxFiles' => $2,",
+            "  'descriptionRows' => $3,",
+            "  'extensions' => '${4:jpg jpeg gif png svg}',",
+            "  'maxSize' => ${5:3}, \/\/ max 3 megapixels",
+            "  'okExtensions' => ['svg'],",
+            "  'icon' => 'picture-o',",
+            "  'outputFormat' => FieldtypeFile::outputFormatSingle,",
+            "  'gridMode' => 'grid', \/\/ grid, left, list",
+            "];"
+        ],
+        "description": "Add an image field via RockMigrations"
+    },
+    "rmf-imagepicker": {
+        "prefix": "rmf-imagepicker",
+        "body": [
+            "return [",
+            "  'type' => 'RockImagePicker',",
+            "  'label' => '$1',",
+            "  'sourcepage' => ${2:1},",
+            "  'sourcefield' => '${3:yourfieldname}',",
+            "];"
+        ],
+        "description": "rmf-imagepicker"
+    },
+    "rmf-integer": {
+        "prefix": "rmf-integer",
+        "body": [
+            "return [",
+            "  'type' => 'integer',",
+            "  'label' => '$1',",
+            "  'icon' => 'list-ol',",
+            "];"
+        ],
+        "description": "Add an integer field via RockMigrations"
+    },
+    "rmf-money": {
+        "prefix": "rmf-money",
+        "body": [
+            "return [",
+            "  'type' => 'RockMoney',",
+            "  'label' => '$1',",
+            "  'icon' => 'money',",
+            "];"
+        ],
+        "description": "Add a RockMoney field via RockMigrations"
+    },
+    "rmf-options": {
+        "prefix": "rmf-options",
+        "body": [
+            "return [",
+            "  'type' => 'options',",
+            "  \/\/ 'inputfieldClass' => 'InputfieldRadios',",
+            "  'label' => '$1',",
+            "  'icon' => 'cubes',",
+            "  'options' => [",
+            "    10 => 'ONE|This is option one',",
+            "    20 => 'TWO',",
+            "    30 => 'THREE',",
+            "  ],",
+            "];"
+        ],
+        "description": "Add a options field via RockMigrations"
+    },
+    "rmf-page": {
+        "prefix": "rmf-page",
+        "body": [
+            "return [",
+            "  'type' => 'page',",
+            "  'label' => '$1',",
+            "  'derefAsPage' => ${2:FieldtypePage::derefAsPageOrFalse},",
+            "  \/\/ inputfield options:",
+            "  \/\/ 'inputfield' => 'InputfieldSelect', \/\/ Select",
+            "  \/\/ 'inputfield' => 'InputfieldRadios', \/\/ Radio Buttons",
+            "  \/\/ 'inputfield' => 'InputfieldPageListSelect', \/\/ Page List Select",
+            "  \/\/ 'inputfield' => 'InputfieldPageAutocomplete', \/\/ Page Auto Complete (single)",
+            "  \/\/ 'inputfield' => 'InputfieldTextTags', \/\/ Text Tags (single)",
+            "  \/\/ 'inputfield' => 'InputfieldSelectMultiple', \/\/ Select Multiple",
+            "  \/\/ 'inputfield' => 'InputfieldCheckboxes', \/\/ Checkboxes",
+            "  \/\/ 'inputfield' => 'InputfieldAsmSelect', \/\/ AsmSelect",
+            "  \/\/ 'inputfield' => 'InputfieldPageAutocomplete', \/\/ Page Auto Complete",
+            "  \/\/ 'inputfield' => 'InputfieldTextTags', \/\/ Text Tags",
+            "  \/\/ 'inputfield' => 'InputfieldPageListSelectMultiple', \/\/ Page List Select Multiple",
+            "  'inputfield' => 'InputfieldPageListSelect',",
+            "  'findPagesSelector' => '${4:id>0,template!=admin}',",
+            "  'labelFieldName' => '${5:title}',",
+            "  'icon' => '${6:link}',",
+            "];"
+        ],
+        "description": "Add a page field via RockMigrations"
+    },
+    "rmf-repeater": {
+        "prefix": "rmf-repeater",
+        "body": [
+            "return [",
+            "  'label' => '$1',",
+            "  'type' => 'FieldtypeRepeater',",
+            "  'fields' => [",
+            "    'title',",
+            "    'foo',",
+            "    'bar',",
+            "  ],",
+            "  'repeaterTitle' => '#n: {title}',",
+            "  'familyFriendly' => 1,",
+            "  'repeaterDepth' => 0,",
+            "  'tags' => '',",
+            "  'repeaterAddLabel' => 'Add New Item',",
+            "  'columnWidth' => 100,",
+            "];"
+        ],
+        "description": "Add a repeater field via RockMigrations"
+    },
+    "rmf-rockgrid": {
+        "prefix": "rmf-rockgrid",
+        "body": [
+            "return [",
+            "  'type' => 'RockGrid',",
+            "  'label' => '$1',",
+            "  'grid' => '$2',",
+            "  'icon' => '${3:table}',",
+            "];"
+        ],
+        "description": "Add a RockGrid field via RockMigrations"
+    },
+    "rmf-rockicons": {
+        "prefix": "rmf-rockicons",
+        "body": [
+            "return [",
+            "  'type' => 'text',",
+            "  'inputfieldClass' => 'InputfieldRockIcons',",
+            "  'label' => '$1',",
+            "];"
+        ],
+        "description": "Add a RockIcons field via RockMigrations"
+    },
+    "rmf-rockpagebuilder": {
+        "prefix": "rmf-rockpagebuilder",
+        "body": [
+            "return [",
+            "  'type' => 'RockPageBuilder',",
+            "  'label' => '$1',",
+            "  'icon' => 'cubes',",
+            "];"
+        ],
+        "description": "Add a RockPageBuilder field via RockMigrations"
+    },
+    "rmf-text": {
+        "prefix": "rmf-text",
+        "body": [
+            "return [",
+            "  'type' => 'text', \/\/ use text*Language to create a multi-lang field",
+            "  'label' => '$1',",
+            "  'icon' => 'align-left',",
+            "  'textformatters' => [",
+            "    'TextformatterEntities',",
+            "  ],",
+            "];"
+        ],
+        "description": "Add a text field via RockMigrations"
+    },
+    "rmf-textarea-cke": {
+        "prefix": "rmf-textarea-cke",
+        "body": [
+            "return [",
+            "  'type' => 'textarea', \/\/ use textarea*Language to create a multi-lang field",
+            "  'label' => '$1',",
+            "  'inputfieldClass' => 'InputfieldCKEditor',",
+            "  'contentType' => FieldtypeTextarea::contentTypeHTML,",
+            "  'rows' => 5,",
+            "  'formatTags' => 'p;h2;h3;h4;',",
+            "  'contentsCss' => '\/site\/templates\/bundle\/main.css?m='.time(),",
+            "  \/\/ this breaks CKE if file is not found!",
+            "  \/\/ 'stylesSet' => 'customstyles:\/site\/templates\/customstyles.js?m='.time(),",
+            "  'toggles' => [",
+            "    InputfieldCKEditor::toggleCleanNBSP,",
+            "  ],",
+            "  'toolbar' => 'Format, Styles,",
+            "    Bold, Italic, Underline, RemoveFormat",
+            "    JustifyLeft, JustifyCenter, JustifyRight, JustifyBlock",
+            "    TransformTextToLowercase,TransformTextToUppercase,TransformTextCapitalize",
+            "    TextColor,BGColor",
+            "    NumberedList, BulletedList, Blockquote",
+            "    PWLink, Unlink, Anchor",
+            "    PWImage, Table, HorizontalRule, SpecialChar",
+            "    PasteText, PasteFromWord",
+            "    Scayt, -, Source",
+            "    facebookvideo',",
+            "  \/\/ 'customOptions' => json_encode([",
+            "  \/\/   'enterMode' => 1, \/\/ P",
+            "  \/\/   'enterMode' => 2, \/\/ BR",
+            "  \/\/   'enterMode' => 3, \/\/ DIV",
+            "  \/\/   'bodyClass' => 'p-4 prose max-w-full',",
+            "  \/\/ ]),",
+            "  'icon' => 'align-left',",
+            "  'textformatters' => [],",
+            "  'inlineMode' => true,",
+            "  \/\/ RockPageBuilder no label shortcut",
+            "  \/\/ 'rpb-nolabel' => true,",
+            "];"
+        ],
+        "description": "Add a CKEditor field via RockMigrations"
+    },
+    "rmf-textarea-tinymce": {
+        "prefix": "rmf-textarea-tinymce",
+        "body": [
+            "return [",
+            "  'type' => 'textarea', \/\/ use textarea*Language to create a multi-lang field",
+            "  'inputfieldClass' => 'InputfieldTinyMCE',",
+            "  'contentType' => FieldtypeTextarea::contentTypeHTML,",
+            "  'label' => '$1',",
+            "  'rows' => ${2:5},",
+            "  'icon' => '${3:align-left}',",
+            "  'inlineMode' => true,",
+            "  \/\/ 'rpb-nolabel' => true, \/\/ hide label in backend",
+            "  'settingsFile' => '\/site\/modules\/RockMigrations\/TinyMCE\/simple.json',",
+            "];"
+        ],
+        "description": "Add a TinyMCE field via RockMigrations"
+    },
+    "rmf-textarea": {
+        "prefix": "rmf-textarea",
+        "body": [
+            "return [",
+            "  'type' => 'textarea', \/\/ use textarea*Language to create a multi-lang field",
+            "  'label' => '$1',",
+            "  'rows' => ${2:5},",
+            "  'icon' => '${3:align-left}',",
+            "];"
+        ],
+        "description": "Add a textarea field via RockMigrations"
+    },
+    "rmf-toggle": {
+        "prefix": "rmf-toggle",
+        "body": [
+            "return [",
+            "  'type' => 'toggle',",
+            "  'label' => '$1',",
+            "  'formatType' => 0, \/\/ integer 0\/1",
+            "  'labelType' => 0, \/\/ yes\/no",
+            "  'inputfieldClass' => 0, \/\/ toggle buttons",
+            "  'defaultOption' => 'yes',",
+            "];"
+        ],
+        "description": "rmf-toggle"
+    },
+    "rmf-url": {
+        "prefix": "rmf-url",
+        "body": [
+            "return [",
+            "  'type' => 'URL',",
+            "  'label' => '$1',",
+            "  'icon' => 'link',",
+            "  'textformatters' => [",
+            "    'TextformatterEntities',",
+            "  ],",
+            "];"
+        ],
+        "description": "rmf-url"
+    }
+}

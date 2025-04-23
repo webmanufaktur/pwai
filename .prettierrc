@@ -1,0 +1,20 @@
+{
+    "useTabs": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "semi": false,
+    "printWidth": 100,
+    "plugins": ["prettier-plugin-tailwindcss", "@ttskch/prettier-plugin-tailwindcss-anywhere"],
+    "tailwindStylesheet": "./site/templates/src/tailwind.css",
+    "tabWidth": 2,
+    "endOfLine": "lf",
+    "overrides": [
+    {
+      "files": "*.twig",
+      "options": {
+        "parser": "anywhere"
+      }
+    }
+  ]
+  }
+  

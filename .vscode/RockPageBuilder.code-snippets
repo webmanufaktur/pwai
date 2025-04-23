@@ -1,0 +1,40 @@
+{
+    "block-settings": {
+        "prefix": "block-settings",
+        "body": [
+            "public function settingsTable(\\ProcessWire\\RockFieldsField \\$field)",
+            "{",
+            "  \\$settings = \\$this->getDefaultSettings(\\$field);",
+            "  $0",
+            "  return \\$settings;",
+            "}"
+        ],
+        "description": "add block settings"
+    },
+    "settings-checkbox": {
+        "prefix": "settings-checkbox",
+        "body": [
+            "\\$settings->add([",
+            "  'name' => '${1:demo_checkbox}',",
+            "  'label' => '${2:Do Something}',",
+            "  'value' => \\$field->input('${1:demo_checkbox}', 'checkbox'),",
+            "]);"
+        ],
+        "description": "add block settings checkbox"
+    },
+    "settings-select": {
+        "prefix": "settings-select",
+        "body": [
+            "\\$settings->add([",
+            "  'name' => 'demo_select',",
+            "  'label' => 'Select something',",
+            "  'value' => \\$field->input('demo_select', 'select', [",
+            "    '*default' => 'Default label',",
+            "    'foo' => 'Foo label',",
+            "    'bar' => 'Bar label',",
+            "  ]),",
+            "]);"
+        ],
+        "description": "add block settings select"
+    }
+}

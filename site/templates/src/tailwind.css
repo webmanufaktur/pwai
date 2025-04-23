@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+/* PLUGINS */
+/* @plugin "@tailwindcss/typography"; */
+/* @plugin "@tailwindcss/forms"; */
+
+/* CUSTOM */
+@theme {
+  /* 480px */
+  --breakpoint-xs: 30rem;
+}
+
+/* SOURCE */
+@source "../../templates/**/*.php";
+@source "../../templates/**/*.latte";
+@source "../../templates/**/*.twig";
+@source "../../templates/**/*.html.twig";
+@source "../../templates/**/*.html";
+@source "../../templates/**/*.js";
+
+/* ALPINE JS */
+[x-cloak] {
+  display: none !important;
+}

@@ -1,0 +1,44 @@
+{
+    "files.associations": {
+        "*.twig": "twig",
+        "*.css": "tailwindcss",
+        "*.md": "markdown",
+        "*.mdx": "markdown"
+    },
+    "editor.formatOnSave": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.minimap.enabled": false,
+    "emmet.includeLanguages": {
+        "twig": "html",
+        "html.twig": "html"
+    },
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.includeLanguages": {
+        "twig": "html"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[twig]": {
+        "editor.defaultFormatter": "mblode.twig-language-2"
+    },
+    "[html.twig]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.tree.enableStickyScroll": false,
+    "editor.stickyScroll.scrollWithEditor": false,
+    "intelephense.environment.phpVersion": "8.2",
+    "intelephense.phpdoc.useFullyQualifiedNames": true,
+    "prettier.resolveGlobalModules": true,
+    "editor.stickyScroll.enabled": false,
+    "workbench.productIconTheme": "icons-carbon",
+    "workbench.iconTheme": "symbols",
+    "editor.tabSize": 2,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.lineHeight": 1.6,
+    "editor.fontSize": 13,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace"
+}
