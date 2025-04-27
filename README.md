@@ -5,7 +5,7 @@ Project description...
 ## Tech Stack
 
 - ProcessWire CMS/CMF
-- PHP 8.2
+- PHP 8.X
 - RockMigrations
 - Tailwind CSS
 - AlpineJS
@@ -14,7 +14,7 @@ Project description...
 
 ## Project File Structure
 
-```
+```bash
 site/
 ├── assets                # static files (e.g. fonts, images)
 ├── classes               # ProcessWire Page Classes
@@ -32,32 +32,34 @@ site/
 
 ## Features
 
+```markdown
 - [X]
 - [ ]
-
+```
 
 ## Status
 
-### Design
-
+```markdown
+Design
 █░░░░░░░░░░░░░░░░░░░ 5%
 
-### HTML/CSS
 
+HTML/CSS
 █░░░░░░░░░░░░░░░░░░░ 5%
 
-### ProcessWire
 
+ProcessWire
 █░░░░░░░░░░░░░░░░░░░ 5%
 
-### Features
 
+Features
 █░░░░░░░░░░░░░░░░░░░ 5%
+```
 
 ## Github
 
-- https://github.com/USERNAME/REPO/
+- https://github.com/webmanufaktur/pwai/
 
 ### Issues
 
-- https://github.com/USERNAME/REPO/issues
+- https://github.com/webmanufaktur/pwai/issues
