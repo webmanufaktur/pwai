@@ -7,10 +7,10 @@
     "build": "rm -rf site/templates/dist/* && npm-run-all build:*",
     "dev:tailwindcss": "npx tailwindcss -i site/templates/src/tailwind.css -o site/templates/dist/tailwind.css --watch",
     "build:tailwindcss": "npx tailwindcss -i site/templates/src/tailwind.css -o site/templates/dist/tailwind.css --minify",
-    "dev:alpinejs": "npx esbuild site/templates/src/alpinejs.js --bundle --target=es2018 --watch --outfile=site/templates/dist/alpine.dist.js",
-    "build:alpinejs": "npx esbuild site/templates/src/alpinejs.js --bundle --target=es2018 --minify --outfile=site/templates/dist/alpine.dist.js",
-    "dev:htmx": "npx esbuild site/templates/src/htmx.js --bundle --target=es2018 --watch --outfile=site/templates/dist/htmx.dist.js",
-    "build:htmx": "npx esbuild site/templates/src/htmx.js --bundle --target=es2018 --minify --outfile=site/templates/dist/htmx.dist.js",
+    "dev:alpinejs": "npx esbuild site/templates/src/alpinejs.js --bundle --target=esnext --watch --outfile=site/templates/dist/alpine.dist.js",
+    "build:alpinejs": "npx esbuild site/templates/src/alpinejs.js --bundle --target=esnext --minify --outfile=site/templates/dist/alpine.dist.js",
+    "dev:htmx": "npx esbuild site/templates/src/htmx.js --bundle --target=esnext --watch --outfile=site/templates/dist/htmx.dist.js",
+    "build:htmx": "npx esbuild site/templates/src/htmx.js --bundle --target=esnext --minify --outfile=site/templates/dist/htmx.dist.js",
     "build:twig": "npx prettier --write 'site/templates/**/*.twig'",
     "build:css": "npx prettier --write 'site/templates/**/*.css'"
   },
@@ -31,14 +31,14 @@
     "@alpinejs/mask": "^3.14.9",
     "@alpinejs/morph": "^3.14.9",
     "@alpinejs/persist": "^3.14.9",
-    "@tailwindcss/cli": "^4.0.17",
+    "@tailwindcss/cli": "^4.1.4",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.16",
     "alpinejs": "^3.14.9",
-    "esbuild": "^0.25.1",
+    "esbuild": "^0.25.3",
     "htmx.org": "^2.0.4",
     "npm-run-all": "^4.1.5",
-    "tailwindcss": "^4.0.17"
+    "tailwindcss": "^4.1.4"
   },
   "devDependencies": {
     "@ttskch/prettier-plugin-tailwindcss-anywhere": "^0.1.0",
