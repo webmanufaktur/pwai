@@ -1,17 +1,17 @@
 {
   "recommendations": [
-    "bmewburn.vscode-intelephense-client",
-    "esbenp.prettier-vscode",
-    "bradlc.vscode-tailwindcss",
-    "mblode.twig-language-2",
-    "csstools.postcss",
+    "antfu.icons-carbon",
     "bierner.markdown-mermaid",
-    "formulahendry.auto-rename-tag",
-    "mjmlio.vscode-mjml",
+    "bmewburn.vscode-intelephense-client",
+    "bradlc.vscode-tailwindcss",
+    "csstools.postcss",
     "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-rename-tag",
     "github.vscode-github-actions",
-    "wilfriedago.vscode-symbols-icon-theme",
-    "antfu.icons-carbon"
+    "mblode.twig-language-2",
+    "mjmlio.vscode-mjml",
+    "wilfriedago.vscode-symbols-icon-theme"
   ],
   "unwantedRecommendations": []
 }
