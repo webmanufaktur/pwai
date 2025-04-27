@@ -16,12 +16,22 @@
 /site/assets/pwpc/*
 
 # Allow database folder but ignore all files inside it by default
-# 2025-02-15: allowes only latest.sql 
+# Allow only specific files
 !/site/assets/backups/database/
+!/site/assets/backups/database/clean.sql
 !/site/assets/backups/database/latest.sql
-# would allow all files
+!/site/assets/backups/database/wip.sql
+# Would allow all files
 # !/site/assets/backups/database/*
 
 # Ignore all /site/config files
 /site/config.php
 /site/config-dev.php
+
+# Ignore npm/pnpm lock file
+pnpm-lock.yaml
+package-lock.json
+
+# Ignore .env file
+.env
+.env.local
