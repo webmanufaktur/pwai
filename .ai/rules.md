@@ -22,4 +22,4 @@
 - [processwire-selectors.md](.ai/docs/processwire-selectors.md)
 - [processwire-url-hooks.md](.ai/docs/processwire-url-hooks.md)
 - [tailwindcss-v4.md](.ai/docs/tailwindcss-v4.md)
-- [links.md](.ai/docs/links.md)
+- [processwire-links.md](.ai/docs/processwire-links.md)
