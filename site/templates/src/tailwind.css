@@ -11,12 +11,15 @@
 }
 
 /* SOURCE */
-@source "../../templates/**/*.php";
-@source "../../templates/**/*.latte";
-@source "../../templates/**/*.twig";
-@source "../../templates/**/*.html.twig";
 @source "../../templates/**/*.html";
+@source "../../templates/**/*.html.twig";
 @source "../../templates/**/*.js";
+@source "../../templates/**/*.latte";
+@source "../../templates/**/*.php";
+@source "../../templates/**/*.twig";
+
+/* SOURCE NOT */
+@source not "../../../node_modules/**/*";
 
 /* ALPINE JS */
 [x-cloak] {
