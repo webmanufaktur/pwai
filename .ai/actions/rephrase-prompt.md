@@ -12,7 +12,7 @@ alwaysApply: false
 2.  If not present, stop and do nothing further for this action.
 3.  If present, analyze the rest of the prompt intent.
 4.  Rephrase technically (scope, files, changes), preserving intent.
-5.  Output rephrased prompt + "Act on rephrased prompt? [y/n]".
+5.  Output rephrased prompt + ask "Act on rephrased prompt? [y/n]".
 6.  Wait for user response.
 7.  On "y": Proceed with rephrased prompt. Start output: "✨✨✨ {name}".
 8.  Else: Ask for clarification.
