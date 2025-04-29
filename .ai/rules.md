@@ -10,16 +10,19 @@ Before responding to any request, always:
 5. Consider the PHP, styling, and Git usage rules
 
 ## Rules
-- [Understanding](.ai/rules/understanding.md)
-- [Feedback](.ai/rules/feedback.md)
-- [PHP Rules](.ai/rules/php-rules.md)
-- [Styling Rules](.ai/rules/styling-rules.md)
-- [Git Usage](.ai/rules/git-usage.md)
+- [feedback.md](./rules/feedback.md)
+- [git-usage.md](./rules/git-usage.md)
+- [php-rules.md](./rules/php-rules.md)
+- [styling-rules.md](./rules/styling-rules.md)
+- [understanding.md](./rules/understanding.md)
 
 ## Actions
-- [Optimize Prompt for Tokens](.ai/actions/optimize-prompt.md)
-- [Rephrase Prompt](.ai/actions/rephrase-prompt.md)
-- [Generate Commit Message](.ai/actions/generate-commit-message.md)
+- [commit-changes.md](./actions/commit-changes.md)
+- [generate-commit-message.md](./actions/generate-commit-message.md)
+- [optimize-prompt.md](./actions/optimize-prompt.md)
+- [plan-steps.md](./actions/plan-steps.md)
+- [rephrase-prompt.md](./actions/rephrase-prompt.md)
+- [write-action.md](./actions/write-action.md)
 
 ## Docs
 - [processwire-coding-style-guide.md](.ai/docs/processwire-coding-style-guide.md)
