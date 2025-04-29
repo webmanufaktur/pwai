@@ -1,8 +1,8 @@
-<!-- Action -->
+<action>
 ---
 name: Rephrase Prompt
 description: Rephrase the user prompt in concise technical terms when the prompt contains the trigger word 'REPHRASE'.
-globs:
+globs: **/*.*
 alwaysApply: false
 ---
 
@@ -14,6 +14,6 @@ alwaysApply: false
 4.  Rephrase technically (scope, files, changes), preserving intent.
 5.  Output rephrased prompt + ask "Act on rephrased prompt? [y/n]".
 6.  Wait for user response.
-7.  On "y": Proceed with rephrased prompt. Start output: "✨✨✨ {name}".
+7.  On "y": Proceed with rephrased prompt. Start output: "✨ {name}".
 8.  Else: Ask for clarification.
-<!-- /Action -->
+</action>

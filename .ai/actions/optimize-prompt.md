@@ -1,8 +1,8 @@
-<!-- Action -->
+<action>
 ---
 name: Optimize Prompt for Tokens
 description: Analyze a prompt file and suggest ways to reduce token usage when the prompt contains the trigger word 'OPTIMIZE'.
-globs:
+globs: **/*.*
 alwaysApply: false
 ---
 
@@ -19,4 +19,4 @@ alwaysApply: false
 6.  Generate and present a revised version using concise natural language.
 7.  Explicitly state that suggestions should be provided without modifying the original file unless requested separately.
 8.  If asked, suggest alternative structured formats (e.g., YAML, JSON) explaining potential benefits/dependencies.
-<!-- /Action -->
+</action>
