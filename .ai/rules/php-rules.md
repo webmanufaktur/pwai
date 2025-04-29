@@ -1,4 +1,4 @@
-<!-- PHP Rules -->
+<rule>
 ---
 name: General PHP rules
 description: Rules that always apply to PHP files and logic
@@ -44,4 +44,4 @@ alwaysApply: false
 - Test in multiple environments
 - Follow semantic versioning for releases
 - Maintain changelog
-<!-- /PHP Rules -->
+</rule>

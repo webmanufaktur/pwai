@@ -1,4 +1,4 @@
-<!-- Rule -->
+<rule>
 ---
 name: Git Usage
 description: How to use Git effectively
@@ -25,4 +25,4 @@ alwaysApply: true
 - Keep the summary line concise
 - Include description for non-obvious changes
 - Reference issue numbers when applicable
-<!-- /Rule -->
+</rule>
