@@ -2,8 +2,8 @@
 ---
 name: Rephrase Prompt
 description: Rephrase the user prompt in concise technical terms when the prompt contains the trigger word 'REPHRASE'.
-globs: **/*.*
-alwaysApply: true
+globs:
+alwaysApply: false
 ---
 
 # Task: Rephrase a given prompt

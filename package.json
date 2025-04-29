@@ -1,26 +1,30 @@
 {
-  "name": "processwire-base-starter-2025",
-  "version": "0.0.1",
-  "description": "ProcessWire Base Starter with TailwindCSS V4, AlpineJS, HTMX, prettier, and more.",
+  "name": "processwire-base-ai-starter",
+  "version": "2.0.0",
+  "description": "ProcessWire Base AI Starter with TailwindCSS V4, AlpineJS, HTMX, Twig, and more.",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
     "build": "rm -rf site/templates/dist/* && npm-run-all build:*",
+
     "dev:tailwindcss": "npx tailwindcss -i site/templates/src/tailwind.css -o site/templates/dist/tailwind.css --watch",
     "build:tailwindcss": "npx tailwindcss -i site/templates/src/tailwind.css -o site/templates/dist/tailwind.css --minify",
-    "dev:alpinejs": "npx esbuild site/templates/src/alpinejs.js --bundle --target=esnext --watch --outfile=site/templates/dist/alpine.dist.js",
+
+    "dev:alpinejs": "npx esbuild site/templates/src/alpinejs.js --bundle --sourcemap --target=esnext --watch --outfile=site/templates/dist/alpine.dist.js",
     "build:alpinejs": "npx esbuild site/templates/src/alpinejs.js --bundle --target=esnext --minify --outfile=site/templates/dist/alpine.dist.js",
-    "dev:htmx": "npx esbuild site/templates/src/htmx.js --bundle --target=esnext --watch --outfile=site/templates/dist/htmx.dist.js",
+
+    "dev:htmx": "npx esbuild site/templates/src/htmx.js --bundle --sourcemap --target=esnext --watch --outfile=site/templates/dist/htmx.dist.js",
     "build:htmx": "npx esbuild site/templates/src/htmx.js --bundle --target=esnext --minify --outfile=site/templates/dist/htmx.dist.js",
+
     "build:twig": "npx prettier --write 'site/templates/**/*.twig'",
+
     "build:css": "npx prettier --write 'site/templates/**/*.css'"
   },
   "keywords": [
-    "Processwire",
-    "ProcessWire CMS",
-    "ProcessWire CMF",
-    "TailwindCSS",
     "AlpineJS",
-    "HTMX"
+    "HTMX",
+    "Processwire CMS/CMF",
+    "TailwindCSS",
+    "Twig"
   ],
   "author": "Alexander Abelt",
   "license": "(c) 2025",

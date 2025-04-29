@@ -2,8 +2,8 @@
 ---
 name: Optimize Prompt for Tokens
 description: Analyze a prompt file and suggest ways to reduce token usage when the prompt contains the trigger word 'OPTIMIZE'.
-globs: **/*.*
-alwaysApply: true
+globs:
+alwaysApply: false
 ---
 
 # Task: Optimize a given prompt file

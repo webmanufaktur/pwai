@@ -1,9 +1,9 @@
 <!-- Action -->
 ---
-name: Generate Commit Message
+name: Commit Changes
 description: Checks recent file changes and staged files in Git, then generates a properly formatted commit message according to project conventions.
-globs: **/*.*
-alwaysApply: true
+globs:
+alwaysApply: false
 ---
 
 # Task: Generate a Git Commit Message
@@ -15,9 +15,9 @@ alwaysApply: true
    - Check recent file changes using `git status --porcelain`
 4. Categorize the changes based on file types and modifications:
    - PHP files: Backend functionality
-   - JS/CSS files: Frontend changes
+   - Twig/Latte/JS/CSS files: Frontend changes
    - Markdown/text files: Documentation
-   - Configuration files: Project setup
+   - Configuration and .dot  files: Project setup
 5. Determine the appropriate commit message prefix:
    - "fix:" for bug fixes
    - "feat:" for new features
