@@ -32,6 +32,8 @@ alwaysApply: false
    - Keep the summary line concise
    - Include description for non-obvious changes
    - Reference issue numbers when applicable
-7. Present the generated commit message to the user.
-8. Optionally suggest running the appropriate Git commands to commit the changes.
+7. Output the generated commit message + ask "Commit changes with this message? [y/n]".
+8. Wait for user response.
+9. On "y": Commit changes. Start output: "✨✨✨ Commit changes now!".
+10. Else: Ask for clarification.
 <!-- /Action -->
