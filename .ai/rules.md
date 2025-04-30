@@ -35,3 +35,6 @@ Before responding to any request, always:
 - [processwire-url-hooks.md](.ai/docs/processwire-url-hooks.md)
 - [processwire-links.md](.ai/docs/processwire-links.md)
 - [tailwindcss-v4.md](.ai/docs/tailwindcss-v4.md)
+
+## Template Stubs
+- [template-stubs](./site/templates/AutoTemplateStubs/)
