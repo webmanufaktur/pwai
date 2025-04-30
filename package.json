@@ -15,9 +15,7 @@
     "dev:htmx": "npx esbuild site/templates/src/htmx.js --bundle --sourcemap --target=esnext --watch --outfile=site/templates/dist/htmx.dist.js",
     "build:htmx": "npx esbuild site/templates/src/htmx.js --bundle --target=esnext --minify --outfile=site/templates/dist/htmx.dist.js",
 
-    "build:twig": "npx prettier --write 'site/templates/**/*.twig'",
-
-    "build:css": "npx prettier --write 'site/templates/**/*.css'"
+    "build:twig": "npx prettier --write 'site/templates/**/*.twig'"
   },
   "keywords": [
     "AlpineJS",
