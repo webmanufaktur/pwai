@@ -1,10 +1,10 @@
-<rule>
 ---
-name: General PHP rules
-description: Rules that always apply to PHP files and logic
-globs: **/*.php
-alwaysApply: false
+trigger: glob
+globs: *.php
 ---
+
+# General PHP rules - Rules that always apply to PHP files and logic
+
 ## Project Code Style and Conventions
 - Write concise, technical PHP 8.2 code with accurate examples
 - Use functional and declarative programming patterns

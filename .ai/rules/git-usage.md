@@ -1,12 +1,8 @@
-<rule>
 ---
-name: Git Usage
-description: How to use Git effectively
-globs: **/*.*
-alwaysApply: true
+trigger: always_on
 ---
 
-# Git Usage
+# Git Usage - How to use Git effectively
 
 ## Commit Message Prefixes
 
@@ -25,4 +21,3 @@ alwaysApply: true
 - Keep the summary line concise
 - Include description for non-obvious changes
 - Reference issue numbers when applicable
-</rule>
