@@ -1,9 +1,5 @@
-<action>
 ---
-name: Plan steps
 description: Understanding the user prompt, plan step by step solution, and document it when the prompt contains the trigger word 'PLANNING'.
-globs: **/*.*
-alwaysApply: false
 ---
 
 # Task: Plan steps
@@ -16,4 +12,3 @@ alwaysApply: false
 6. Create a markdown checklist inside the [.ai/tasks/](../tasks/) folder with all necessary phases and steps.
 7. Name the file based on prompt/task scope.
 8. Do NOT write code yet.
-</action>

@@ -1,9 +1,5 @@
-<action>
 ---
-name: Commit Changes
 description: Checks recent file changes and staged files in Git, then generates properly formatted commit messages according to project conventions, grouping similar changes into separate commits.
-globs: **/*.*
-alwaysApply: false
 ---
 
 # Task: Generate Git Commit Messages for Changes
@@ -34,4 +30,3 @@ alwaysApply: false
    - Commit with the specific message: `git commit -m "[message]"`
    - Output: "✨ Committed: [message]"
 9. After all commits are complete, output: "🎉 All changes committed successfully!"
-</action>

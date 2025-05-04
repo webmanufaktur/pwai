@@ -1,9 +1,5 @@
-<action>
 ---
-name: Rephrase Prompt
 description: Rephrase the user prompt in concise technical terms when the prompt contains the trigger word 'REPHRASE'.
-globs: **/*.*
-alwaysApply: false
 ---
 
 # Task: Rephrase a given prompt
@@ -16,4 +12,3 @@ alwaysApply: false
 6.  Wait for user response.
 7.  On "y": Proceed with rephrased prompt. Start output: "✨ {name}".
 8.  Else: Ask for clarification.
-</action>

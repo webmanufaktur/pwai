@@ -1,9 +1,5 @@
-<action>
 ---
-name: Write Action
 description: Write a new action file based on user input when the prompt contains the trigger word 'ACTION'.
-globs: **/*.*
-alwaysApply: false
 ---
 
 # Task: Write a new action file
@@ -60,4 +56,3 @@ alwaysApply: boolean
    - On approval, create the file in .ai/actions/{name}.md
 
 4. Confirm successful creation with: "✨ New action '{name}' created successfully"
-</action>
