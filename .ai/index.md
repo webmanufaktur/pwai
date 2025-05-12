@@ -25,4 +25,4 @@ Before responding to any request, always:
 - [write-action.md](./workflows/write-action.md)
 
 ## Docs
-- [ProcessWire API Variables](./docs/processwire/index.md)
+- [ProcessWire Documentation](./docs/processwire/index.md)
