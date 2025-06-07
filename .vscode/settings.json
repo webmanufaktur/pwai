@@ -39,9 +39,7 @@
   },
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
   "workbench.iconTheme": "symbols",
-  "workbench.productIconTheme": "icons-carbon",
+  "workbench.productIconTheme": "Default",
   "workbench.tree.enableStickyScroll": false,
-  "[twig]": {
-    "editor.defaultFormatter": "mblode.twig-language-2"
-  },
+  "workbench.sideBar.location": "right"
 }
