@@ -2,6 +2,10 @@
 
 A modern ProcessWire CMS/CMF starter project with Tailwind CSS, Alpine.js, and Twig template engine.
 
+> [!WARNING]  
+> **This project is currently in BETA.**
+> Features and APIs are subject to frequent changes and may not be stable. Please use with caution and expect regular updates.
+
 ## 🚀 Features
 
 - **Modern Frontend**
