@@ -1,10 +1,11 @@
+> [!WARNING]  
+> **This project is currently in BETA.**
+> Features and APIs are subject to frequent changes and may not be stable. Please use with caution and expect regular updates.
+
 # ProcessWire AI Starter
 
 A modern ProcessWire CMS/CMF starter project with Tailwind CSS, Alpine.js, and Twig template engine.
 
-> [!WARNING]  
-> **This project is currently in BETA.**
-> Features and APIs are subject to frequent changes and may not be stable. Please use with caution and expect regular updates.
 
 ## 🚀 Features
 
@@ -42,32 +43,35 @@ A modern ProcessWire CMS/CMF starter project with Tailwind CSS, Alpine.js, and T
 
 ```
 .
-├── .cursor/             # Cursor IDE configuration
-├── .docs/               # Project documentation
-│   ├── processwire/     # ProcessWire-specific docs
-│   └── rockmigrations/  # RockMigrations docs
-├── .snippets/           # Code snippets for IDEs
-│   └── rockmigrations/  # RockMigrations snippets
-├── .vscode/             # VS Code configuration
-├── node_modules/        # Node.js dependencies
-├── site/                # ProcessWire site files
-│   ├── assets/          # Static files (fonts, images)
-│   ├── classes/         # ProcessWire Page Classes
-│   ├── hooks/           # ProcessWire Hooks
-│   ├── modules/         # ProcessWire Modules
-│   ├── ready.php        # Single use hooks
-│   ├── migrate.php      # Migrations file
-│   └── templates/       # Template files
-│       ├── dist/        # Compiled assets
-│       ├── src/         # Source files
-│       └── views/       # Twig templates
-├── .editorconfig        # Editor configuration
-├── .gitignore           # Git ignore rules
-├── .nvmrc               # Node.js version
-├── .prettierrc          # Prettier configuration
-├── composer.json        # PHP dependencies
-├── package.json         # Node.js scripts and dependencies
-└── README.md            # This file
+├── .cursor/                      # Cursor IDE configuration
+├── .windsurf/                    # Windsurf IDE configuration
+├── .docs/                        # Project documentation
+│   ├── processwire/              # ProcessWire-specific docs
+│   └── rockmigrations/           # RockMigrations docs
+├── .snippets/                    # Code snippets for IDEs
+│   └── rockmigrations/           # RockMigrations snippets
+├── .vscode/                      # VS Code configuration
+├── site/                         # ProcessWire site files
+│   ├── assets/                   # Static files (fonts, images)
+│   ├── classes/                  # ProcessWire Page Classes
+│   ├── hooks/                    # ProcessWire Hooks
+│   ├── modules/                  # ProcessWire Modules
+│   ├── ready.php                 # Single use hooks
+│   ├── migrate.php               # Migrations file
+│   └── templates/                # Template files
+│       ├── dist/                 # Compiled assets
+│       ├── src/                  # Source files
+│       └── views/                # Twig files
+│           ├── components/       # Twig components
+│           │   └── forms/        # Twig form components
+│           └── layouts/          # Twig layouts
+├── .editorconfig                 # Editor configuration
+├── .gitignore                    # Git ignore rules
+├── .nvmrc                        # Node.js version
+├── .prettierrc                   # Prettier configuration
+├── composer.json                 # PHP dependencies
+├── package.json                  # Node.js scripts and dependencies
+└── README.md                     # This file
 ```
 
 ## 🚀 Getting Started
@@ -112,13 +116,21 @@ A modern ProcessWire CMS/CMF starter project with Tailwind CSS, Alpine.js, and T
 
 ### Available Scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run build:tailwindcss` - Build Tailwind CSS
-- `npm run build:alpinejs` - Build Alpine.js
-- `npm run build:htmx` - Build HTMX
-- `npm run build:twig` - Format Twig templates
-- `npm run build:css` - Format CSS
+#### Main Scripts
+- `npm run dev` - Start development server with watch mode for all assets (runs all dev:* scripts in parallel)
+- `npm run build` - Clean dist folder and build all assets for production
+
+#### Development Scripts (Watch Mode)
+- `npm run dev:tailwindcss` - Watch and compile Tailwind CSS with sourcemaps
+- `npm run dev:alpinejs` - Watch and bundle Alpine.js with sourcemaps
+- `npm run dev:htmx` - Watch and bundle HTMX with sourcemaps
+
+#### Production Build Scripts
+- `npm run build:tailwindcss` - Build and minify Tailwind CSS
+- `npm run build:alpinejs` - Build and minify Alpine.js bundle
+- `npm run build:htmx` - Build and minify HTMX bundle
+- `npm run build:twig` - Format Twig templates with Prettier
+- `npm run build:css` - Format CSS files with Prettier
 
 ## 📚 Documentation
 

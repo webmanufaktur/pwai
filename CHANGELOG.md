@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Moved development-related files to dedicated directories
 - Updated VS Code settings for better Cursor compatibility
 - Restructured project documentation
+- Updated README.md scripts section to accurately reflect all available npm scripts with detailed descriptions and organized categorization
 
 ### Removed
 - Obsolete configuration files
