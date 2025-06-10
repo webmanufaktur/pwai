@@ -1,0 +1,36 @@
+{
+  "editor": {
+    "fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "fontSize": 13,
+    "lineHeight": 1.6,
+    "tabSize": 2
+  },
+  "files": {
+    "associations": {
+      "*.astro": "astro",
+      "*.css": "css",
+      "*.md": "markdown",
+      "*.mdx": "markdown",
+      "*.twig": "twig"
+    }
+  },
+  "workbench": {
+    "enablePreviewFeatures": true
+  },
+  "tailwindCSS": {
+    "emmetCompletions": true,
+    "includeLanguages": {
+      "css": "css",
+      "html": "html",
+      "javascript": "javascript",
+      "twig": "html"
+    }
+  },
+  "emmet": {
+    "includeLanguages": {
+      "astro": "html",
+      "html.twig": "html",
+      "twig": "html"
+    }
+  }
+}
