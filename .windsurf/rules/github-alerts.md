@@ -1,0 +1,32 @@
+---
+trigger: manual
+---
+
+Alerts are an extension of Markdown used to emphasize critical information. On GitHub, they are displayed with distinctive colors and icons to indicate the importance of the content.
+
+## How To Use GitHub Alerts in Markdown
+
+```markdown
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+```
+
+```markdown
+> [!TIP]
+> Optional information to help a user be more successful.
+```
+
+```markdown
+> [!IMPORTANT]  
+> Crucial information necessary for users to succeed.
+```
+
+```markdown
+> [!WARNING]  
+> Critical content demanding immediate user attention due to potential risks.
+```
+
+```markdown
+> [!CAUTION]
+> Negative potential consequences of an action.
+```
