@@ -1,14 +1,12 @@
 {
   "recommendations": [
     "astro-build.astro-vscode",
-    "antfu.icons-carbon",
     "bierner.markdown-mermaid",
     "bmewburn.vscode-intelephense-client",
     "bradlc.vscode-tailwindcss",
     "csstools.postcss",
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
-    "formulahendry.auto-rename-tag",
     "github.vscode-github-actions",
     "mblode.twig-language-2",
     "mjmlio.vscode-mjml",

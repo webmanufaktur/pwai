@@ -4,7 +4,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
   "editor.fontSize": 13,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.lineHeight": 1.6,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
