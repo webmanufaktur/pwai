@@ -10,6 +10,7 @@
     "github.vscode-github-actions",
     "mblode.twig-language-2",
     "mjmlio.vscode-mjml",
+    "ms-playwright.playwright",
     "wilfriedago.vscode-symbols-icon-theme"
   ],
   "unwantedRecommendations": []
