@@ -11,5 +11,5 @@ description: Fixes Github Issues
 - when solved:
   - mark issue as completed in file
   - commit changes and include issue file, use /commit-changes workflow
-  - update issue on Github and add commit hash, use github-mcp-server
-  - close issue on Github, use github-mcp-server
+  - update issue on Github and add commit hash, use Github CLI in terminal
+  - close issue on Github, use Github CLI in terminal
