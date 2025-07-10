@@ -19,7 +19,7 @@
 
     "build:css": "npx prettier --write 'site/templates/**/*.css'",
 
-    "usage": "npx ccusage@latest"
+    "usage": "clear && npx ccusage@latest"
   },
   "keywords": [
     "AlpineJS",
