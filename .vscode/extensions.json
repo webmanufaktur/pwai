@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "Anthropic.claude-code",
     "astro-build.astro-vscode",
     "bierner.markdown-mermaid",
     "bmewburn.vscode-intelephense-client",
@@ -9,9 +10,7 @@
     "esbenp.prettier-vscode",
     "github.vscode-github-actions",
     "mblode.twig-language-2",
-    "mjmlio.vscode-mjml",
-    "ms-playwright.playwright",
-    "wilfriedago.vscode-symbols-icon-theme"
+    "mjmlio.vscode-mjml"
   ],
   "unwantedRecommendations": []
 }
