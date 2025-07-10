@@ -17,7 +17,9 @@
 
     "build:twig": "npx prettier --write 'site/templates/**/*.twig'",
 
-    "build:css": "npx prettier --write 'site/templates/**/*.css'"
+    "build:css": "npx prettier --write 'site/templates/**/*.css'",
+
+    "usage": "npx ccusage@latest"
   },
   "keywords": [
     "AlpineJS",
