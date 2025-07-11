@@ -10,14 +10,26 @@ description: Checks recent file changes and staged files in Git, then generates 
    - Check staged files using `git diff --cached --name-status`
    - Check recent file changes using `git status --porcelain`
 4. Group the changes based on file types, modifications, and logical relationships:
-   - PHP files: Backend functionality (further group by module/feature)
-   - Twig/Latte/JS/CSS files: Frontend changes (group by component/feature)
-   - Markdown/text files: Documentation (group by topic/section)
-   - Configuration and .dot files: Project setup (group by purpose)
+   - `src/components/`: UI components (group by feature/component)
+   - `src/pages/`: Page components (group by route)
+   - `src/content/`: Content collections (group by collection type)
+   - `src/styles/`: Global styles and Tailwind configuration
+   - `public/`: Static assets (images, fonts, etc.)
+   - Configuration files (astro.config.mjs, tailwind.config.cjs, etc.)
+   - Package management (package.json, package-lock.json)
+   - Documentation (README.md, etc.)
 5. For each group of related changes:
-   - Determine the appropriate commit message prefix according to the guidelines in [Git Usage Rules](../rules/git-usage.md)
-   - Generate a properly formatted commit message specific to that group
-   - Create a list of files to be included in this commit
+   - Determine the appropriate commit message prefix:
+     - `feat:` for new features
+     - `fix:` for bug fixes
+     - `perf:` for performance improvements
+     - `docs:` for documentation changes
+     - `style:` for formatting changes
+     - `refactor:` for code refactoring
+     - `test:` for adding missing tests
+     - `chore:` for maintenance tasks
+   - Generate a clear, concise commit message in lowercase
+   - Include the scope in parentheses when relevant (e.g., `feat(header): add mobile navigation`)
 6. Present the proposed commit groups to the user:
    - Show each group with its commit message and affected files
    - Ask "Would you like to proceed with these commits? [y/n/edit]"
@@ -29,4 +41,10 @@ description: Checks recent file changes and staged files in Git, then generates 
    - Stage only the files for that group: `git add [files in group]`
    - Commit with the specific message: `git commit -m "[message]"`
    - Output: "✨ Committed: [message]"
-9. After all commits are complete, output: "🎉 All changes committed successfully!"
+9. After all this is done, output: "🎉 All changes committed successfully."
+
+---
+
+## Flags
+
+`--yolo` = dont ask for permission or changes, use recommended details, add changes, commit changes, and push commits.
