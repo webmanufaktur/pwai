@@ -10,7 +10,8 @@
     "esbenp.prettier-vscode",
     "github.vscode-github-actions",
     "mblode.twig-language-2",
-    "mjmlio.vscode-mjml"
+    "mjmlio.vscode-mjml",
+    "unifiedjs.vscode-mdx"
   ],
   "unwantedRecommendations": []
 }
